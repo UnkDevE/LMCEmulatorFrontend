@@ -185,6 +185,8 @@ class window(QtGui.QMainWindow):
         fileM.addAction(saveasACT)
         fileM.addAction(saveACT)
         fileM.addAction(printACT)
+        # run actions
+        runM.addAction(runAct)
         self.show() 
     def closeEvent(self, event):
         reply = QtGui.QMessageBox.question(self, 'Message',
